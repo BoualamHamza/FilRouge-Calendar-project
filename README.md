@@ -1,4 +1,4 @@
-# FilRouge-project
+# FilRouge Calendar -project
 
 ## English version
  THIS IS A PROJECT THAT WAS GIVEN TO ME AS A TASK TO DO IN CLASSROOM
