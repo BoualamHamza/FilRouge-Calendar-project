@@ -1,6 +1,6 @@
 # FilRouge-project
 
-# English version
+## English version
  THIS IS A PROJECT THAT WAS GIVEN TO ME AS A TASK TO DO IN CLASSROOM
  ->the project consist to make use of all java fondamunetals (inheritance, overriding methods, abstraction, encapsulation, polymorphism, etc...)
  by managing to create a TYPE OF CALENDAR by dealing with all constraints
@@ -34,7 +34,7 @@ The principle will be to generate a certain number of random schedules, and to r
  
  
  
-# Version française
+## Version française
  
  
  
