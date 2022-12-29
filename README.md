@@ -46,11 +46,12 @@ The principle will be to generate a certain number of random schedules, and to r
 
 
 1. **Partie 1**
+
 Une activité sera vue comme la donnée d'une description (par exemple « Aller à l'université ») ainsi que d'une durée (par exemple « 15 »). L'unité de temps importe peu du moment que c'est la même pour toutes les activités, mais on pourra penser à la minute.
 
-->Une contrainte de « précédence » s'applique à deux activités, dans un ordre donné ; elle impose que la première activité se termine au plus tard lorsque    la seconde commence ; ainsi, s'il y a une contrainte de précédence portant sur « Aller à l'université » et « Attacher le vélo », alors si « Aller à l'université » est programmée à la minute 60, la contrainte imposera que « Attacher le vélo » soit programmée au plus tôt à la minute 75 ;
+ + Une contrainte de « précédence » s'applique à deux activités, dans un ordre donné ; elle impose que la première activité se termine au plus tard lorsque    la seconde commence ; ainsi, s'il y a une contrainte de précédence portant sur « Aller à l'université » et « Attacher le vélo », alors si « Aller à l'université » est programmée à la minute 60, la contrainte imposera que « Attacher le vélo » soit programmée au plus tôt à la minute 75 ;
 
-->Une contrainte de type meet s'applique également à deux activités, toujours dans un ordre donné, mais elle impose que la seconde commence exactement        quand la première se termine (on peut penser à « Faire du sport » et « Prendre une douche »).
+ + Une contrainte de type meet s'applique également à deux activités, toujours dans un ordre donné, mais elle impose que la seconde commence exactement        quand la première se termine (on peut penser à « Faire du sport » et « Prendre une douche »).
 
 2. **Partie 2**
 
@@ -61,12 +62,15 @@ Par exemple, si l'on a les activités « se lever » (durée : 1), « aller au t
 En revanche, si l'on a les activités « prendre connaissance du sujet d'examen », « réviser » et « passer l'examen » (les durées n'importent pas) et des contraintes imposant de réviser avant de passer l'examen, de passer l'examen avant de prendre connaissance du sujet d'examen, et de prendre connaissance du sujet d'examen avant de réviser, alors il n'y a pas de solution (c'est-à-dire d'ordonnancement respectant toutes les contraintes).
 
 3. **Partie 3**
+
 on souhaite représenter des contraintes entre une activité et une autre, avec un délai minimal et un délai maximal, entendu entre la fin de la première activité et le début de la seconde. On supposera qu'il y a toujours un minimum (0 dans l'exemple du plat ci-dessus) et un maximum. Par ailleurs, comme pour le reste du fil rouge, on supposera que les délais et durées sont tous exprimés dans une même unité de temps. Enfin, on interprétera les délais minimal et maximal au sens large
 
 4. **Partie 4**
+
 L'objectif  est de factoriser les éléments communs des classes de contraintes écrites . Étant donné que l'on va ainsi transformer les classes existantes, il peut être intéressant d'archiver le package constraints déjà écrit (par exemple en le copiant dans un autre répertoire), afin de garder sa version sans abstraction avant de la transformer. La suite de l'énoncé considère que l'on part du code réalisé précédemment dans le package constraints, pour le transformer. On travaillera donc toujours dans le package constraints.
 
 5. **Partie 5**
+
 Le principe sera de générer un certain nombre d'emplois du temps aléatoires, et de retenir le meilleur, c'est-à-dire celui satisfaisant le plus de contraintes. Bien entendu, ce principe ne garantira pas de trouver un emploi du temps satisfaisant toutes les contraintes, mais si le nombre de tirages est suffisamment grand, et le problème pas trop contraint, cela arrivera avec une probabilité significative.
 
 
