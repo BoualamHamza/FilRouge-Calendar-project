@@ -7,11 +7,11 @@
  
  
 1. Part 1
+
 An activity will be seen as given a description (eg "Going to college") as well as a duration (eg "15"). The unit of time does not matter as long as it is the same for all activities, but we can think of the minute.
+ *A “precedence” constraint applies to two activities, in a given order; it imposes that the first activity ends at the latest when the second begins; thus, if there is a precedence constraint on "Go to college" and "Tie on the bike", then if "Go to college" is scheduled at minute 60, the constraint will dictate that "Tie on the cycle” is scheduled at the earliest at minute 75;
 
-->A “precedence” constraint applies to two activities, in a given order; it imposes that the first activity ends at the latest when the second begins; thus, if there is a precedence constraint on "Go to college" and "Tie on the bike", then if "Go to college" is scheduled at minute 60, the constraint will dictate that "Tie on the cycle” is scheduled at the earliest at minute 75;
-
-->A meet type constraint also applies to two activities, always in a given order, but it imposes that the second begins exactly when the first ends (we can think of "Playing sports" and "Take a shower" ).
+ *A meet type constraint also applies to two activities, always in a given order, but it imposes that the second begins exactly when the first ends (we can think of "Playing sports" and "Take a shower" ).
 
 2. Part 2
 
