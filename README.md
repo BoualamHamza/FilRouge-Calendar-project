@@ -6,7 +6,7 @@
  by managing to create a TYPE OF CALENDAR by dealing with all constraints
  
  
-1. **Part 1
+1. **Part 1**
 
 An activity will be seen as given a description (eg "Going to college") as well as a duration (eg "15"). The unit of time does not matter as long as it is the same for all activities, but we can think of the minute.
 
