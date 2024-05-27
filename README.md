@@ -2,8 +2,8 @@
 
 ## English version
  THIS IS A PROJECT THAT WAS GIVEN TO ME AS A TASK TO DO IN CLASSROOM
- ->the project consist to make use of all java fondamunetals (inheritance, overriding methods, abstraction, encapsulation, polymorphism, etc...)
- by managing to create a TYPE OF CALENDAR by dealing with all constraints
+ -> The project consists of making use of all Java fundamentals (inheritance, overriding methods, abstraction, encapsulation, polymorphism, etc...)
+ by managing to create a TYPE OF CALENDAR and dealing with multiple types of constraints
  
  
 1. **Part 1**
@@ -20,7 +20,7 @@ It is a question of creating a small program making it possible to find a schedu
 
 For example, if we have the activities "get up" (duration: 1), "go to work" (15), "take a shower" (10), "brush your teeth" (3), "s 'dress' (2) and 'have breakfast' (15), with constraints requiring getting up before having breakfast, getting up before getting dressed, having breakfast before brushing one's teeth, to take a shower before getting dressed, to brush your teeth before going to work, to get dressed before going to work, and to have breakfast before going to work, then a possible schedule is to get up, then eat breakfast, then brush your teeth, then get dressed and finally go to work.
 
-On the other hand, if we have the activities "to learn about the subject of the exam", "to revise" and "to take the exam" (the durations do not matter) and constraints imposing to revise before taking the exam , to take the exam before learning about the exam topic, and to learn about the exam topic before revising, then there is no solution (i.e. scheduling respecting all constraints).
+On the other hand, if we have the activities "to learn about the subject of the exam", "to revise" and "to take the exam" (the durations do not matter) and constraints imposing to revise before taking the exam, to take the exam before learning about the exam topic, and to learn about the exam topic before revising, then there is no solution (i.e. scheduling respecting all constraints).
 
 3. **Part 3**
 
@@ -28,11 +28,11 @@ we want to represent constraints between one activity and another, with a minimu
 
 4. **Part 4**
 
-The objective is to factorize the common elements of the written constraint classes. Given that we are going to transform the existing classes in this way, it may be interesting to archive the constraints package already written (for example by copying it into another directory), in order to keep its version without abstraction before transforming it. The rest of the statement considers that we start from the code created previously in the constraints package, to transform it. We will therefore always work in the constraints package.
+The objective is to factorize the common elements of the written constraint classes. Given that we are going to transform the existing classes in this way, it may be interesting to archive the constraints package already written (for example by copying it into another directory), to keep its version without abstraction before transforming it. The rest of the statement considers that we start from the code created previously in the constraints package, to transform it. We will therefore always work in the constraints package.
 
 5. **Part 5**
 
-The principle will be to generate a certain number of random schedules, and to retain the best, that is to say the one satisfying the most constraints. Of course, this principle will not guarantee to find a schedule satisfying all the constraints, but if the number of draws is large enough, and the problem not too constrained, it will happen with a significant probability.
+The principle will be to generate a certain number of random schedules, and to retain the best, that is to say, the one satisfying the most constraints. Of course, this principle will not guarantee finding a schedule satisfying all the constraints, but if the number of draws is large enough, and the problem is not too constrained, it will happen with a significant probability.
  
  
  
